@@ -64,7 +64,7 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
         Password
       </label> */}
 
-      <div className="relative mt-2 mb-2">
+      <div className="relative mt-6 mb-6">
         {/* Password input with padding-left for the lock icon */}
         <input
           type={showPassword ? 'text' : 'password'}
@@ -98,13 +98,13 @@ const Login: React.FC<LoginProps> = ({ onClose }) => {
         </br>
         <button
             type="submit"
-            className="w-full bg-purple-600 text-white py-2 rounded-[30px] hover:bg-purple-700 transition mt-2">
+            className="w-full bg-purple-600 text-white py-2 rounded-[30px] hover:bg-purple-700 transition mt-6 mb-6">
             Next
           </button>
            <div>
       {/* Your signup form here */}
 
-      <p className="text-red-500 underline">
+      <p className="text-purple-500 underline">
         Already have an account?{' '}
         <span
           className="text-blue-600 cursor-pointer hover:underline"

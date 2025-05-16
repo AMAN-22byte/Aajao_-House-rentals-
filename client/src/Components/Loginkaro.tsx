@@ -58,7 +58,7 @@ const Loginkaro: React.FC<LoginProps> = ({ onClose }) => {
         Password
       </label> */}
 
-      <div className="relative mt-2 mb-2">
+      <div className="relative mt-6 mb-6">
         {/* Password input with padding-left for the lock icon */}
         <input
           type={showPassword ? 'text' : 'password'}
@@ -86,13 +86,13 @@ const Loginkaro: React.FC<LoginProps> = ({ onClose }) => {
     </div>
           
         </form>
-        <p className="flex items-end underline text-red-500">Forget Password?</p>
+        <p className="flex items-end underline text-purple-500 mb-6">Forget Password?</p>
         <ToggleButton/>
         <br>
         </br>
         <button
             type="submit"
-            className="w-full bg-purple-600 text-white py-2 rounded-[30px] hover:bg-purple-700 transition mt-2">
+            className="w-full bg-purple-600 text-white py-2 rounded-[30px] hover:bg-purple-700 transition mt-6 mb-6">
             Login
           </button>
         {/* <button className="flex items-center bg-purple-700 font-bold text-white p-2 rounded-md w-full mt-2 text-center hover:bg-purple-600 transition">Login</button> */}
