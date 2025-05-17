@@ -4,12 +4,16 @@ import { IoIosMail } from "react-icons/io";
 import ToggleButton from "./ToggleButton";
 // import { FaEye } from "react-icons/fa";
 import { FaLock, FaEye, FaEyeSlash } from 'react-icons/fa';
+import SignUp from "./SignUp";
+
 interface LoginProps {
   onClose: () => void;
 }
 
 const Loginkaro: React.FC<LoginProps> = ({ onClose }) => {
   const [showPassword, setShowPassword] = useState(false);
+  // const [showPassword, setShowPassword] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/30">
       <div className="relative bg-white rounded-lg p-6 shadow-lg w-full max-w-sm">
@@ -95,9 +99,32 @@ const Loginkaro: React.FC<LoginProps> = ({ onClose }) => {
             className="w-full bg-purple-600 text-white py-2 rounded-[30px] hover:bg-purple-700 transition mt-6 mb-6">
             Login
           </button>
+          <p className="text-purple-500">
+                      Don't have an account?{" "}
+                      <span
+                        className="text-purple-600 cursor-pointer hover:underline"
+                        onClick={() => setShowLogin(true)}>
+                        SignUp
+                      </span>
+                    </p>
+          
+                    {/* Login Popup Modal */}
+                    {showLogin && (
+                      <div className="fixed inset-0 bg-transparent flex items-center justify-center z-50">
+                        <div className="bg-white rounded-lg p-6 w-full max-w-md shadow-xl relative">
+                          <button
+                            onClick={() => setShowLogin(false)}
+                            className="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl">
+                            &times;
+                          </button>
+                          <SignUp onClose={() => setShowLogin(false)} />
+                        </div>
+                      </div>
+                    )}
         {/* <button className="flex items-center bg-purple-700 font-bold text-white p-2 rounded-md w-full mt-2 text-center hover:bg-purple-600 transition">Login</button> */}
       </div>
     </div>
+    
   );
 };
 
