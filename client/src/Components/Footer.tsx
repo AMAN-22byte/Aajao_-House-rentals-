@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   return (
     <footer className="w-full border-t bg-white py-6 md:py-12">
@@ -24,9 +24,14 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-purple-700">
-                  Blog
-                </a>
+                {/* <a href="#" className="text-gray-500 hover:text-purple-700">
+                  Privacy
+                </a> */}
+                <Link
+                  to="/privacy"
+                  className="text-gray-500 hover:text-purple-700">
+                  Privacy
+                </Link>
               </li>
             </ul>
           </div>
@@ -83,7 +88,8 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-purple-900">aajao</h3>
             <p className="text-gray-500">
-              Find your perfect stay with aajao, the world's leading accommodation booking platform.
+              Find your perfect stay with aajao, the world's leading
+              accommodation booking platform.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-purple-700">
