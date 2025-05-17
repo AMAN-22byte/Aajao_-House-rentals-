@@ -5,12 +5,12 @@ import PopularDestinations from './Components/PopularDestinations';
 import FeatureSelection from './Components/FeatureSelection';
 import Testimonial from './Components/Testimonial';
 import CtaSection from './Components/CtaSection';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Privacy from './Components/Privacy';
 
 export default function App() {
   return (
-    <Router>
+    <>
       <Header />
       <main className="flex-1">
         <Routes>
@@ -30,6 +30,6 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
-    </Router>
+    </>
   );
 }
