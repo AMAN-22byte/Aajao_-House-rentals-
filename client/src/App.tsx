@@ -5,7 +5,7 @@ import PopularDestinations from './Components/PopularDestinations'
 import FeatureSelection from './Components/FeatureSelection'
 import Testimonial from './Components/Testimonial'
 import CtaSection from './Components/CtaSection'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import Privacy from './Components/Privacy'
 
 export default function App() {
