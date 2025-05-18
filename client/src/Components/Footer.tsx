@@ -9,9 +9,11 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-purple-900">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-500 hover:text-purple-700">
+                <Link
+                  to="/About"
+                  className="text-gray-500 hover:text-purple-700">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-gray-500 hover:text-purple-700">
@@ -33,7 +35,6 @@ const Footer: React.FC = () => {
                   Privacy
                 </Link>
                 <br></br>
-                
               </li>
               <li>
                 <Link
@@ -69,6 +70,13 @@ const Footer: React.FC = () => {
                   Contact Us
                 </a>
               </li>
+              <li>
+                <Link
+                  to="/Host&Agreements"
+                  className="text-gray-500 hover:text-purple-700">
+                  Host & Agreement
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="space-y-4">
@@ -93,6 +101,13 @@ const Footer: React.FC = () => {
                 <a href="#" className="text-gray-500 hover:text-purple-700">
                   Host Responsibly
                 </a>
+              </li>
+              <li>
+                <Link
+                  to="/Blogs"
+                  className="text-gray-500 hover:text-purple-700">
+                  Blogs
+                </Link>
               </li>
             </ul>
           </div>

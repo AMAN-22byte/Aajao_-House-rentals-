@@ -9,6 +9,9 @@ import { Routes, Route } from 'react-router-dom';
 import Privacy from './Components/Privacy';
 import Terms from './Components/Terms';
 import Cancel from './Components/Cancel';
+import Agreements from './Components/Agreements';
+import Blogs from './Components/Blogs';
+import About from './Components/About';
 
 
 export default function App() {
@@ -32,6 +35,9 @@ export default function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/T&C" element={<Terms/>} />
           <Route path="/Cancel" element={<Cancel/>} />
+          <Route path="/Host&Agreements" element={<Agreements/>} />
+          <Route path="/Blogs" element={<Blogs/>} />
+          <Route path="/About" element={<About/>} />
         </Routes>
       </main>
       <Footer />
