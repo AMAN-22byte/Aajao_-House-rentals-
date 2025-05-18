@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="w-full border-t bg-white py-6 md:py-12">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 mb-5">
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-purple-900">Company</h3>
             <ul className="space-y-2">
@@ -32,6 +32,15 @@ const Footer: React.FC = () => {
                   className="text-gray-500 hover:text-purple-700">
                   Privacy
                 </Link>
+                <br></br>
+                
+              </li>
+              <li>
+                <Link
+                  to="/T&C"
+                  className="text-gray-500 hover:text-purple-700 mt-3">
+                  T&C
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,9 +58,11 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-purple-700">
-                  Cancellation Options
-                </a>
+                <Link
+                  to="/Cancel"
+                  className="text-gray-500 hover:text-purple-700">
+                  Cancellation Policy
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-gray-500 hover:text-purple-700">
@@ -107,7 +118,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t pt-8 text-center">
+        <div className="mt-10 border-t pt-4 text-center">
           <p className="text-gray-500">© 2025 aajao. All rights reserved.</p>
         </div>
       </div>

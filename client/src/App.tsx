@@ -7,6 +7,9 @@ import Testimonial from './Components/Testimonial';
 import CtaSection from './Components/CtaSection';
 import { Routes, Route } from 'react-router-dom';
 import Privacy from './Components/Privacy';
+import Terms from './Components/Terms';
+import Cancel from './Components/Cancel';
+
 
 export default function App() {
   return (
@@ -27,6 +30,8 @@ export default function App() {
             }
           />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/T&C" element={<Terms/>} />
+          <Route path="/Cancel" element={<Cancel/>} />
         </Routes>
       </main>
       <Footer />
