@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10 border-t pt-4 text-center">
+        <div className="mt-10 border-t pt-7 text-center">
           <p className="text-gray-500">© 2025 aajao. All rights reserved.</p>
         </div>
       </div>
