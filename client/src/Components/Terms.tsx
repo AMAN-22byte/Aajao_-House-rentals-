@@ -2,7 +2,7 @@
 
 const Terms = () => {
   return (
-    <div className="terms-container px-6 py-12 max-w-4xl mx-auto text-black bg-[#ffffff]">
+    <div className="terms-container px-6 py-12 max-w-10xl mx-auto text-black bg-gradient-to-b from-blue-200 to-purple-700">
       <h1 className="text-4xl font-bold mb-8">Terms of Service – India</h1>
 
       <section className="mb-8">
