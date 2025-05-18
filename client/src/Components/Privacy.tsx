@@ -25,7 +25,7 @@ const Privacy = () => {
   return (
     <>
     {/* <Header/> */}
-    <div className="max-w-8xl mx-auto py-8 px-8 bg-gradient-to-b from-blue-200 to-purple-700 text-black">
+    <div className="terms-container max-w-10xl mx-auto text-black bg-gradient-to-b from-blue-200 to-purple-700 min-h-screen py-12 px-4 sm:px-6 lg:px-20">
     <h3 className=' text-gray-400 font-bold my-2'>Legal terms</h3>
     <h1 className='font-extrabold text-4xl my-2' >Aajao Privacy</h1>
     <p className='my-2'>Our Privacy Policy explains what personal information we collect, how we use personal information, how personal information is shared, and privacy rights.</p>
