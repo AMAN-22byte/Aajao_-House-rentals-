@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 // import Login from "../Components/Login";
 import SignUp from "../Components/SignUp";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Header: React.FC = () => {
@@ -24,11 +25,9 @@ const Header: React.FC = () => {
             className="text-sm font-medium text-gray-500 hover:text-purple-700">
             Listings
           </a>
-          <a
-            href="#"
-            className="text-sm font-medium text-gray-500 hover:text-purple-700">
+         <Link to='/About' className='text-sm font-medium text-gray-500 hover:text-purple-700'>
             About
-          </a>
+          </Link>
           <a
             href="#"
             className="text-sm font-medium text-gray-500 hover:text-purple-700">
@@ -46,14 +45,14 @@ const Header: React.FC = () => {
                     </a> */}
           <button
             onClick={() => setShowLogin(true)}
-            className="text-sm font-medium text-gray-500 hover:text-purple-700 hidden md:block">
-            SignUp
+            className=" px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-700 to-purple-500 rounded-md hover:from-purple-800 hover:to-purple-600text-sm hidden md:block">
+            Login/SignUp
           </button>
 
           {showLogin && <SignUp onClose={() => setShowLogin(false)} />}
-          <button className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-700 to-purple-500 rounded-md hover:from-purple-800 hover:to-purple-600">
+          {/* <button className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-700 to-purple-500 rounded-md hover:from-purple-800 hover:to-purple-600">
             Login
-          </button>
+          </button> */}
         </div>
       </div>
     </header>
